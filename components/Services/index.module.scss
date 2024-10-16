@@ -36,7 +36,7 @@
       font-weight: 600;
       font-style: normal;
       color: white;
-
+      text-align: justify;
     }
   }
 
@@ -80,13 +80,15 @@
       text-align: justify;
       color: rgba(48, 34, 34, 0.726);
       margin-top: 10px;
-      height: 20vh;     
-      @media screen and (max-width:1200px) {
-        height: auto;
-      }
+      height: 23vh;
+
+      // @media screen and (max-width:1200px) {
+      //   height: auto;
+      // }
+
       @media screen and (max-width:768px) {
         height: auto;
-      } 
+      }
 
     }
 

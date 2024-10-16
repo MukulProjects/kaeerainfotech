@@ -9,7 +9,7 @@ $hover-color: #2980b9;
   justify-content: flex-start; // Align text to the left
   align-items: center;
   padding: 3rem; // Added padding for a spacious layout
-  height: 60vh; // Set height as necessary
+  height: 65vh; // Set height as necessary
   overflow: hidden;
   color: white; // Ensure text is visible against the video
 
@@ -36,6 +36,7 @@ $hover-color: #2980b9;
   flex: 0 0 50%; // Set text container to 50% width
   padding: 2rem;
   z-index: 1; // Space from the right
+  font-family: sans-serif; 
 
   @media (max-width: 768px) {
     flex: 1; // Take full width on mobile
@@ -47,10 +48,14 @@ $hover-color: #2980b9;
 .title {
   font-size: 2rem;
   margin-bottom: 1rem;
+  display: inline-block; /* Make the title inline-block for line alignment */
+  position: relative; 
+  
   // animation: fadeIn 0.5s ease;
 
   @media screen and (max-width :768px) {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    text-align: justify;
   }
 
   @keyframes fadeIn {
@@ -65,10 +70,23 @@ $hover-color: #2980b9;
     }
   }
 }
-
+.title::after {
+  content: ''; /* Required for pseudo-elements */
+  display: block; /* Make it a block element */
+  height: 4px; /* Line height */
+  background-color: orange; /* Line color */
+  width: 80%; /* Same width as the text */
+  position: absolute; /* Position it relative to the title */
+  bottom: -6px; /* Adjust position below the text */
+  left: 0; /* Align to the left */
+}
 .description {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  text-align: justify;
+  @media screen and (max-width:768px) {
+    text-align: justify;
+  }
 }
 
 .button {

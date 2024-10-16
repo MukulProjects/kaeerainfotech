@@ -30,7 +30,7 @@ const Cards = () => {
         </div>
         <div className={style.webtech}>
           <p>
-            Kaeera Ventures provides turn-key digital marketing
+            Kaeera Infotechnology provides turn-key digital marketing
             services, which means we offer everything your business needs to
             execute its marketing strategy. Explore our services now to get
             started!
@@ -53,7 +53,7 @@ const Cards = () => {
               <h1 className={style.title}>{card.title}</h1>
               <div className={style.content}>{card.description}</div>
             </div>
-            <Link href={"/contact"} style={{ display: 'flex', justifyContent: "center", textDecoration: "none" }}><button className={style.reachUsButton}>Reach Us</button></Link>
+            <Link href={"/contact-us"} style={{ display: 'flex', justifyContent: "center", textDecoration: "none" }}><button className={style.reachUsButton}>Reach Us</button></Link>
           </div>
         ))}
       </div>

@@ -16,12 +16,12 @@ const Footer: React.FC = () => {
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/services">Services</Link></li>
                     <li><Link href="/about">About</Link></li>
-                    <li><Link href="/contact">Contact us</Link></li>
+                    <li><Link href="/contact-us">Contact us</Link></li>
                 </ul>
             </div>
             <div className={styles.description}>
                 <h4 className={styles.footerHeading}>About Us</h4>
-                <p className={styles.aboutText}>Kaeera Ventures is a forward-thinking IT company specializing in innovative technology solutions. We empower businesses with cutting-edge software, cloud services, and data analytics to drive growth and enhance efficiency.</p>
+                <p className={styles.aboutText}>Kaeera Infotechnology is a forward-thinking IT company specializing in innovative technology solutions. We empower businesses with cutting-edge software, cloud services, and data analytics to drive growth and enhance efficiency.</p>
                 <Link href="/about" className={styles.readMore}>Read more</Link>
             </div>
         </footer>

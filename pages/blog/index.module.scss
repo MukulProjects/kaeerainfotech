@@ -28,6 +28,9 @@
         height: 70vh; // Maintain aspect ratio
         border-radius: 10px;
         margin-bottom: 1rem;
+        @media screen and (max-width:768px) {
+            height: 42vh;
+        }
     }
 
     .blogMeta {

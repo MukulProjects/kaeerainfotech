@@ -9,7 +9,7 @@ const BlogList: React.FC = () => {
         <div className={styles.blogListContainer}>
             <h1>Our Blogs</h1>
             <div className={styles.blogs}>
-                {blogsData.slice(0,3).map(blog => (
+                {blogsData.slice(0,8).map(blog => (
                     <Link key={blog.id} href={`/blog/${blog.id}`} className={styles.blogCard}>
                         <Image src={blog.image} alt={blog.title} className={styles.blogImage} width={500} height={500}/>
                         <div className={styles.blogContent}>

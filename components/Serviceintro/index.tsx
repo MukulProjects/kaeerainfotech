@@ -20,7 +20,7 @@ const ServiceIntro = () => {
                     <FontAwesomeIcon icon={faRocket} className={style.icon} /> Welcome to Our Services
                 </h1>
                 <p className={style.description}>
-                    <FontAwesomeIcon icon={faBullhorn} className={style.icon} /> At Kaeera Ventures, we provide comprehensive digital marketing solutions tailored to your business needs.
+                    <FontAwesomeIcon icon={faBullhorn} className={style.icon} /> At Kaeera Infotechnology, we provide comprehensive digital marketing solutions tailored to your business needs.
                 </p>
                 <p className={style.description}>
                     Explore our wide range of services designed to enhance your online presence and drive results!

@@ -5,7 +5,8 @@ import Footer from '../components/Footer';
 import dotenv from 'dotenv';
 import Head from 'next/head';
 import KL from '../images/KL logo - Copy.png'; // Make sure the path is correct
-
+import Top from '../components/Top'
+import './globals.css'
 dotenv.config();
 
 class MyApp extends App {
@@ -26,8 +27,8 @@ class MyApp extends App {
           <link rel="icon" href={KL.src} />
           <link rel="apple-touch-icon" href={KL.src} />
           <meta name="description" content="Kaeera ventures your all IT requirements will be fullfilled." />
-          {/* Add any other head elements you want */}
         </Head>
+        <Top />
         <Navbar />
         <Component {...pageProps} />
         <Footer />

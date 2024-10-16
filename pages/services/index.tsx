@@ -36,8 +36,7 @@ const Cards = () => {
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:title" content="Kaeera Ventures | Your Digital Marketing Partner" />
         <meta property="og:description" content="Explore our digital marketing solutions to enhance your business's online presence!" />
-        <meta property="og:image" content="https://example.com/your-image.jpg" />
-        <meta property="og:url" content="https://yourwebsite.com" />
+        <meta property="og:url" content="https://www.kaeerainfotechnology.com" />
       </Head>
       <ServiceIntro />
       <div className={style.service_card}>
@@ -49,7 +48,7 @@ const Cards = () => {
           </div>
           <div className={style.webtech}>
             <p>
-              Kaeera Ventures provides turn-key digital marketing services, which means we offer everything your business needs to execute its marketing strategy. Explore our services now to get started!
+              Kaeera Infotechnology provides turn-key digital marketing services, which means we offer everything your business needs to execute its marketing strategy. Explore our services now to get started!
             </p>
           </div>
         </div>
@@ -63,7 +62,7 @@ const Cards = () => {
                 <h1 className={style.title}>{card.title}</h1>
                 <div className={style.content}>{card.description}</div>
               </div>
-              <Link href={"/contact"} style={{ display: 'flex', justifyContent: "center", textDecoration: "none" }}><button className={style.reachUsButton}>Reach Us</button></Link>
+              <Link href={"/contact-us"} style={{ display: 'flex', justifyContent: "center", textDecoration: "none" }}><button className={style.reachUsButton}>Reach Us</button></Link>
             </div>
           ))}
         </div>

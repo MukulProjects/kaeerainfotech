@@ -3,28 +3,54 @@
 import React from 'react';
 import styles from './index.module.scss';
 import Image from 'next/image';
-import lottieImage from '../../images/lottie-home-pic1.webp'; // Ensure the image path is correct
+import support from '../../images/client-support.png'
+import custom from '../../images/custom-website-design-why-box.png'
+import professional from '../../images/professional-team.png'
+import quality from '../../images/quality-service.png'
+// Ensure the image path is correct
 
-const TextImageSection = () => {
+const TextImageSection = ({ image, data, head }: any) => {
   return (
-    <div className={styles.container}>
-      <div className={styles.imageContainer}>
-        <Image
-          src={lottieImage}
-          alt="Kaeera Ventures Animation"
-          width={500}
-          height={500}
-          className={styles.image}
-          priority
-        />
+    <>
+      <div className={styles.container}>
+        <div className={styles.imageContainer}>
+          <Image
+            src={image}
+            alt="Kaeera Ventures Animation"
+            width={500}
+            height={500}
+            className={styles.image}
+            priority
+          />
+        </div>
+        {/* <div></div> */}
+        <div className={styles.textContainer}>
+          <h2 className={styles.title}>{head}</h2>
+          <p className={styles.description}>
+            {data}
+          </p>
+          <div className={styles.flex}>
+            <div className={styles.card}>
+              <Image src={professional} alt="Professional" className={styles.image} />
+              <p>Professional Teams</p>
+            </div>
+            <div className={styles.card}>
+              <Image src={custom} alt="Customise" className={styles.image} />
+              <p>Customise Web Design</p>
+            </div>
+            <div className={styles.card}>
+              <Image src={quality} alt="quality" className={styles.image} />
+              <p>All Quality Services</p>
+            </div>
+            <div className={styles.card}>
+              <Image src={support} alt="support" className={styles.image} />
+              <p>24×7 Customer Supports</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div className={styles.textContainer}>
-        <h2 className={styles.title}>We love Kaeera Infotechnology</h2>
-        <p className={styles.description}>
-          What we provide Our company Kaeera provides SEO, content marketing, social media management and Pay Per Click advertising solutions. By being particular with details collected and managed, every campaign is designed to generate the most out of it in terms of traffic and conversion. Where we terminate by marketing, our consultation services include analyses and solutions for improving your whole business.
-        </p>
-      </div>
-    </div>
+    </>
   );
 };
 

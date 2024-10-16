@@ -24,12 +24,13 @@
     p {
         margin: 0.5rem 0;
         font-size: 1.1rem; // Increased font size for better readability
-        text-align: justify ;
+        text-align: justify;
     }
 
     .contactDetail {
         font-size: 1.2rem; // Make contact details slightly larger
         font-weight: 500; // Medium weight for emphasis
+
     }
 
     a {
@@ -79,6 +80,7 @@
     .aboutText {
         margin: 1rem 0;
         font-size: 1.1rem; // Increased font size for readability
+
         @media (max-width: 768px) {
             // flex-basis: 100%; // Stack on small screens
             // margin-bottom: 1.5rem; // Margin for stacked items
@@ -100,4 +102,12 @@
             color: #fff; // Change text color on hover
         }
     }
+}
+
+.contact {
+    width: 90%;
+    @media screen and (max-width:68px) {
+        // width: 90%;
+    }
+
 }
